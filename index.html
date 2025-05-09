@@ -2,9 +2,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Country Information Finder</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-globe"></i> Country Information Finder</h1>
+            <p>Discover details about any country in the world</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="search-section">
+            <div class="search-box">
+                <input type="text" id="country-input" placeholder="Enter country name...">
+                <button id="search-btn"><i class="fas fa-search"></i> Search</button>
+            </div>
+            <p class="hint">Try searching for countries like "France", "Japan", or "South Africa"</p>
+        </section>
+
+        <section id="results-section">
+            <!-- Results will be displayed here -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Country Information Finder. All rights reserved.</p>
+            <p>Data provided by <a href="https://restcountries.com/" target="_blank">REST Countries API</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
     
 </body>
 </html>
